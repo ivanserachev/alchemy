@@ -17,7 +17,7 @@ from .. import util
 if TYPE_CHECKING:
     from ..engine.interfaces import Dialect
 
-__all__ = ("mssql", "mysql", "oracle", "postgresql", "sqlite")
+__all__ = ("clickhouse","mssql", "mysql", "oracle", "postgresql", "sqlite")
 
 
 def _auto_fn(name: str) -> Optional[Callable[[], Type[Dialect]]]:
